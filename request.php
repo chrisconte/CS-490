@@ -1,7 +1,7 @@
 <?php
 $url = 'https://web.njit.edu/~cc593/r.php';
 $fields = array(
-	'ucid' => urlencode("test_ucid"),
+  'ucid' => urlencode("test_ucid"),
   'password'=> urlencode("test_password")
 );
 
@@ -23,6 +23,6 @@ $result = curl_exec($ch);
 //Close connection
 curl_close($ch);
 
-//Echo the response
+//Print the response
 echo $result;
 ?>
