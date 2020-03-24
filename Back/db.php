@@ -1,9 +1,5 @@
 <?php
 
-//Receive POST request data and assign to variables
-$user_name = $_POST['ucid'];
-$user_pass = $_POST['password'];
-
 //Connect to database
 $servername = "sql.njit.edu";
 $serveruser = "cc593";
