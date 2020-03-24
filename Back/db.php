@@ -7,7 +7,7 @@ $user_pass = $_POST['password'];
 //Connect to database
 $servername = "sql.njit.edu";
 $serveruser = "cc593";
-$serverpass = "CS490project!";
+$serverpass = "******";
 $dbname = "cc593";
 $link = new mysqli($servername, $serveruser, $serverpass, $dbname);
 
