@@ -1,5 +1,10 @@
 <?php
 include "db.php";
+
+//Receive POST request data and assign to variables
+$user_name = $_POST['ucid'];
+$user_pass = $_POST['password'];
+
 //Create query and execute search query
 $query = "SELECT user, pass FROM account WHERE user = '$user_name'";
 $result = $link->query($query);
