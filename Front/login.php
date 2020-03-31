@@ -1,6 +1,4 @@
 <?php
-require 'curl.php';
-
 $url = 'https://web.njit.edu/~cc593/mid/curl.php'
 
 $raw = file_get_contents('php://input');
