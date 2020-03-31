@@ -13,20 +13,21 @@ $result = $link->query($query);
 if(!$result = $link->query($query)){
   die('There was an error running the query [' . $link->error. ']');
 }
-
 //Fetch query data
 $row = $result->fetch_assoc();
+
+if(empty($row)){
+  echo "Incorrect UCID";
+}
 
 //Validate credentials and generate response
 if($row['user']=="$user_name"){
   if(password_verify($user_pass, $row['pass'])){
-    echo "Correct Credentials";
+    echo $row['priv'];
   }
   else{
     echo "Incorrect Password";
+
   }
-}
-else {
-  echo "Incorrect Username";
 }
 ?>
