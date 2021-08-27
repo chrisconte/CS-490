@@ -1,4 +1,4 @@
 # CS-490
 
-#Info
+## Info
 This project was created using PHP 7
